@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Modal from "../../Modal";
 
 const productImages = [
-  "/couch-front.png",
-  "/couch-left.png",
-  "/couch-right.png",
+  `${process.env.PUBLIC_URL}/couch-front.png`,
+  `${process.env.PUBLIC_URL}/couch-left.png`,
+  `${process.env.PUBLIC_URL}/couch-right.png`,
 ];
 
 export default function ProductPage() {

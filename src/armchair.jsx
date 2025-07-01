@@ -8,7 +8,7 @@ import { Center } from "@react-three/drei";
 
 export default function Armchair(props) {
   const groupRef = useRef < THREE.Group > null;
-  const { scene } = useGLTF("/armchair.glb");
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/armchair.glb`);
   const { size, viewport } = useThree();
 
   const aspect = size.width / viewport.width;
@@ -29,4 +29,4 @@ export default function Armchair(props) {
   );
 }
 
-useGLTF.preload("/armchair.glb");
+useGLTF.preload(`${process.env.PUBLIC_URL}/armchair.glb`);

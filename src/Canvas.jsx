@@ -16,7 +16,8 @@ export default function Canvas() {
     let hitTestSource = null;
     let hitTestSourceRequested = false;
     let controller;
-    const models = ["./armchair1.glb"];
+    const models = [`${process.env.PUBLIC_URL}/armchair1.glb`];
+
     const items = [];
 
     init();
@@ -181,7 +182,7 @@ export default function Canvas() {
         <img
           className="button-image"
           id="item0"
-          src="/couch-front.png"
+          src={`${process.env.PUBLIC_URL}/couch-front.png`}
           alt=""
         />
       </div>
