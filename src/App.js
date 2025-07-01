@@ -11,10 +11,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/playground/ar-things">
       <Routes>
-        <Route path="/playground/ar-things" element={<ProductPage />} />
-        <Route path="/playground/ar-things/canvas" element={<Canvas />} />
+        <Route path="/" element={<ProductPage />} />
+        <Route path="/canvas" element={<Canvas />} />
       </Routes>
     </BrowserRouter>
   );
