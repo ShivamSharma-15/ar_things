@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  webxr-furniture:
+    container_name: webxr-furniture
+    build: .
+    networks:
+      - npm-network
+    restart: unless-stopped
+
+networks:
+  npm-network:
+    external: true
