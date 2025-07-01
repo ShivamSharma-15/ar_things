@@ -58,7 +58,11 @@ const Modal = ({ isOpen, onClose }) => {
           &times;
         </button>
         <div style={imageContainerStyle}>
-          <img src="/qr-code.png" alt="UwU Modal" style={imageStyle} />
+          <img
+            src={`${process.env.PUBLIC_URL}/qr-code.png`}
+            alt="UwU Modal"
+            style={imageStyle}
+          />
         </div>
       </div>
     </div>
