@@ -13,8 +13,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ProductPage />} />
-        <Route path="/canvas" element={<Canvas />} />
+        <Route path="/playground/ar-things" element={<ProductPage />} />
+        <Route path="/playground/ar-things/canvas" element={<Canvas />} />
       </Routes>
     </BrowserRouter>
   );
