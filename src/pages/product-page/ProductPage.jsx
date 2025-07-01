@@ -104,7 +104,7 @@ export default function ProductPage() {
 
   const handleAr = () => {
     if (isARSupported) {
-      navigate("/canvas");
+      navigate("canvas");
     } else {
       setModalOpen(true);
     }
